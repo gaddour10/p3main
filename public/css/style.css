@@ -1,0 +1,134 @@
+@media (max-width: 600px) {
+  body {
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header img {
+    width: 50%;
+  }
+  header .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-top: 2px solid grey;
+    width: 100%;
+  }
+  header .location i {
+    padding-right: 10px;
+  }
+
+  .topsection {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  .fonctionnement {
+    font-family: "Roboto", sans-serif;
+  }
+  .fonctionnement__blocs {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-left: 10px;
+  }
+  .fonctionnement__blocs--design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 0px grey;
+    margin: auto;
+    margin-left: 10px;
+    height: 70px;
+  }
+  .fonctionnement__blocs--design i {
+    padding-right: 15px;
+  }
+  .fonctionnement__blocs--design p {
+    position: relative;
+    left: -15px;
+    background-color: #9356DC;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fonctionnement__blocs--design:hover {
+    background-color: #f2eafb;
+  }
+
+  .restaurants {
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+  }
+  .restaurants__blocs {
+    height: 100%;
+  }
+  .restaurants__blocs .details {
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 0px grey;
+    margin-bottom: 30px;
+  }
+  .restaurants__blocs .details img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: -45px;
+  }
+  .restaurants__blocs .details__description {
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .restaurants__blocs .details__description h2 {
+    margin: auto;
+  }
+  .restaurants__blocs .details__description i {
+    position: relative;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 90px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+  }
+  footer img {
+    color-adjust: white;
+    width: 30%;
+  }
+  footer li {
+    list-style-type: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

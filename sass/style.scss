@@ -1,0 +1,130 @@
+$color-primary:#9356DC;
+$color-secondary:#FF79DA ;
+$color-tertiaire:#99E2D0;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border-shadow {
+    border-radius: 20px;
+    box-shadow: 5px  10px  20px 0px grey;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    
+
+}
+@mixin h2 {
+    border-bottom: #99E2D0 2px solid;
+            width: 20%;
+            padding-left: 10px;
+    
+}
+@media (max-width:600px)
+{
+
+
+body
+{
+    margin: auto;
+}
+header
+{
+    display: flex;
+    margin: auto;
+    
+   
+    i
+    {
+        width: 50px;
+        padding-top: 10px;
+    }
+    img
+    {
+        width: 200px;
+        @include center;
+        align-content: center;
+    }
+}
+.backgroundimg
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -45px;
+    
+}
+section
+{
+    
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    background-color: lightgrey;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    .topsection
+    {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        i
+        {
+            padding-top: 25px;
+            
+        }
+    }
+    .entrées
+    {
+        .title
+        {
+            border-bottom: #99E2D0 2px solid;
+            width: 20%;
+            padding-left: 10px;
+        }
+        &__blocs
+        {
+            @include border-shadow;
+            &--description
+        {
+            display: none;
+        }
+           
+        }
+        
+    }
+    .plats
+    {
+        .title
+        {
+            @include h2;
+        }
+        &__blocs
+        {
+            @include border-shadow;
+        }
+
+    }
+    .desserts
+    {
+        .title
+        {
+            @include h2;
+            
+        }
+        &__blocs
+            {
+                @include border-shadow;
+            }
+    }
+}
+
+}

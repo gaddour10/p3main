@@ -1,0 +1,47 @@
+.fonctionnement
+{
+    
+    font-family: 'Roboto', sans-serif;
+
+    &__blocs
+    {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        margin-left: 10px;
+        &--design
+        {
+            @include center;
+            justify-content: flex-start;
+            font-size: 13px;
+            width: 90%;
+           background-color: whitesmoke ;
+           @include border-shadow;
+           margin: auto;
+           margin-left: 10px;
+           height: 70px;
+           i
+           {
+               padding-right: 15px;
+           }
+           p
+           {
+               position: relative;
+               left: -15px;
+               background-color: #9356DC;
+               border-radius: 20px;
+               width: 30px;
+               height: 30px;
+               color: white;
+               @include center;
+           }
+           &:hover
+           {
+               
+               background-color: lighten($color: $color-primary, $amount: 35%);
+           }
+           
+        }
+        
+    }
+}
