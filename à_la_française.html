@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="./public/css/style2.css" />
+<link rel="stylesheet" type="text/css" href="./public/css/style.css" />
 <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -11,63 +11,66 @@
       referrerpolicy="no-referrer"
     />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
+    </style>
     <title>à la française</title>
 </head>
 <body>
-<header>
+<header class="v2">
     <i class="fa-solid fa-left-long"></i>
     <img src="./public/images/logo/ohmyfood.png" alt="logo">
 
 </header>
     <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant_à_la_française" class="backgroundimg">
-    <section>
+    <section class="alphapage">
         <div class="topsection">
             <h1>A la française</h1>
             <i class="fa-regular fa-heart"></i>
         </div>
         <div class="entrées">
-          <h2 class="title">ENTRées</h2>
+          <h1 class="title">Entrées</h1>
           <div class="entrées__blocs">
               <h2>Tartare de poulpe acidulé</h2>
-              <div class="entrée__blocs--description">
+              <div class="entrées__blocs--description">
                   <h3> Aux zests d'orange</h3>
                   <p>25€</p>
               </div>
           </div>
           <div class="entrées__blocs">
             <h2>Velotué de légumes d'antan</h2>
-            <div class="entrée_desription">
+            <div class="entrées__blocs--description">
                 <h3> Carotte,panais,topinambour</h3>
                 <p>35€</p>
             </div>
         </div>
         <div class="entrées__blocs">
             <h2>Soupe à l'oignon</h2>
-            <div class="entrée_desription">
+            <div class="entrées__blocs--description">
                 <h3> Revisité</h3>
                 <p>20€</p>
             </div>
         </div>
         </div>
         <div class="plats">
-            <h2 class="title">PLATS</h2>
+            <h1 class="title">PLATS</h1>
             <div class="plats__blocs">
                 <h2>Coquilles Saint-Jaques</h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3> Accompagnées d'une purée de panais</h3>
                     <p>40€</p>
                 </div>
             </div>
             <div class="plats__blocs">
                 <h2>Magret de Canard</h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3> Et parmentier de pommes de terres</h3>
                     <p>35€</p>
                 </div>
             </div>
             <div class="plats__blocs">
                 <h2>Pigeonneau d'îlle-et-Vilaine</h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3> Sur son lit de gnocchis aux légumes</h3>
                     <p>44€</p>
                 </div>
@@ -75,24 +78,24 @@
             
           </div>
           <div class="desserts">
-            <h2 class="title">DESSERTS</h2>
+            <h1 class="title">DESSERTS</h1>
             <div class="desserts__blocs">
                 <h2>Pétales de violettes glacés</h2>
-                <div class="desserts_desription">
+                <div class="desserts__blocs--description">
                     <h3> Et purée de noisette</h3>
                     <p>18€</p>
                 </div>
             </div>
             <div class="desserts__blocs">
                 <h2>Fondant au chocolat </h2>
-                <div class="dessert_desription">
+                <div class="desserts__blocs--description">
                     <h3>Revisité</h3>
-                    <p>2€</p>
+                    <p>25€</p>
                 </div>
             </div>
             <div class="desserts__blocs">
                 <h2>Millefeuille croustillant</h2>
-                <div class="dessert_desription">
+                <div class="desserts__blocs--description">
                     <h3> Myrtilles et pâte d'amande</h3>
                     <p>23€</p>
                 </div>
@@ -102,10 +105,13 @@
           <div class="button">
 
           </div>
+          <button type="button">Commander</button>
     </section>
+    
     <footer>
         
         <ul>
+            <li class="title"> ohmyfood </li>
             <li> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
             <li> <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
             <li> Mention légales</li>

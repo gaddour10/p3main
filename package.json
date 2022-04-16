@@ -4,9 +4,9 @@
     "description": "project_number_3",
     "main": "index.js",
     "scripts": {
-      "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+      "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
 
-      "sass": "sass --watch ./sass/style.scss:./public/css/style2.css"
+     
     },
     "repository": {
       "type": "git",

@@ -10,47 +10,53 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
+            </style>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>la palette de goulet</title>
 </head>
 <body>
-<header>
+<header class="v2">
     <i class="fa-solid fa-left-long"></i>
     <img src="./public/images/logo/ohmyfood.png" alt="logo">
 
 </header>
-    <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
+    <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant" class="backgroundimg">
     <section>
         <div class="topsection">
             <h1>la palette de goulet</h1>
             <i class="fa-regular fa-heart"></i>
         </div>
         <div class="entrées">
-          <h2>ENTRées</h2>
-          <div class="entrées_blocs">
+          <h2>Entrées</h2>
+          <div class="entrées__blocs">
               <h2>Fricassé d'escargot </h2>
-              <div class="entrée_desription">
+              <div class="entrées__blocs--description">
                   <h3>Au pimet d'espelette</h3>
                   <p>25€</p>
               </div>
           </div>
-          <div class="entrées_blocs">
+          <div class="entrées__blocs">
             <h2>Foie gras de canard mi-cuit</h2>
-            <div class="entrée_desription">
+            <div class="entrées__blocs--description">
                 <h3>Et ses copeaux de truffe noire</h3>
                 <p>35€</p>
             </div>
         </div>
-        <div class="entrées_blocs">
+        <div class="entrées__blocs">
             <h2>Oeuf au plat </h2>
-            <div class="entrée_desription">
+            <div class="entrées__blocs--description">
                 <h3>Assassionnée à la truffe sur lit de</h3>
                 <p>20€</p>
             </div>
         </div>
-        <div class="entrées_blocs">
+        <div class="entrées__blocs">
             <h2>Foie gras de canard cuit entier </h2>
-            <div class="entrée_desription">
+            <div class="entrées__blocs--description">
                 <h3>confiture de figure et pain toasté</h3>
                 <p>35€</p>
             </div>
@@ -58,23 +64,23 @@
         </div>
         <div class="PLATS">
             <h2>PLATS</h2>
-            <div class="plats_blocs">
+            <div class="plats__blocs">
                 <h2>Filet de boeuf aux herbes</h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3>Accompagné de sa ribambelle de légume</h3>
                     <p>40€</p>
                 </div>
             </div>
-            <div class="plats_blocs">
+            <div class="plats__blocs">
                 <h2>Parmentier de queue de boeuf</h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3>A la truffe noire sur sa purée de panais</h3>
                     <p>35€</p>
                 </div>
             </div>
-            <div class="plats_blocs">
+            <div class="plats__blocs">
                 <h2>Filet de turbot </h2>
-                <div class="plats_desription">
+                <div class="plats__blocs--description">
                     <h3>Aux argumes</h3>
                     <p>44€</p>
                 </div>
@@ -83,23 +89,23 @@
           </div>
           <div class="Desserts">
             <h2>DESSERTS</h2>
-            <div class="desserts_blocs">
+            <div class="desserts__blocs">
                 <h2>Paris-brest</h2>
-                <div class="desserts_desription">
+                <div class="desserts__blocs--description">
                     <h3>Revisité</h3>
                     <p>18€</p>
                 </div>
             </div>
-            <div class="dessert_blocs">
+            <div class="desserts__blocs">
                 <h2>Macaron au chocolat d'exception</h2>
-                <div class="dessert_desription">
+                <div class="desserts__blocs--description">
                     <h3>Et glace à la vanille de Madagascar</h3>
                     <p>22€</p>
                 </div>
             </div>
-            <div class="dessert_blocs">
+            <div class="desserts__blocs">
                 <h2>Mousse au chocolat </h2>
-                <div class="dessert_desription">
+                <div class="desserts__blocs--description">
                     <h3>Au piment d'espelette et à la truffe noire</h3>
                     <p>23€</p>
                 </div>
@@ -111,8 +117,8 @@
           </div>
     </section>
     <footer>
-        <img src="./public/images/logo/ohmyfood.png" alt="logo">
         <ul>
+            <li class="title">ohmyfood</li>
             <li> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
             <li> <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
             <li> Mention légales</li>

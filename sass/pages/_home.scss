@@ -1,47 +1,34 @@
-.fonctionnement
+.topsectionv0
 {
-    
-    font-family: 'Roboto', sans-serif;
-
-    &__blocs
+    max-width: 100%;
+    font-family: 'roboto';
+    margin: auto;   
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-top-right-radius: 0px;
+    h1
     {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        margin-left: 10px;
-        &--design
-        {
-            @include center;
-            justify-content: flex-start;
-            font-size: 13px;
-            width: 90%;
-           background-color: whitesmoke ;
-           @include border-shadow;
-           margin: auto;
-           margin-left: 10px;
-           height: 70px;
-           i
-           {
-               padding-right: 15px;
-           }
-           p
-           {
-               position: relative;
-               left: -15px;
-               background-color: #9356DC;
-               border-radius: 20px;
-               width: 30px;
-               height: 30px;
-               color: white;
-               @include center;
-           }
-           &:hover
-           {
-               
-               background-color: lighten($color: $color-primary, $amount: 35%);
-           }
-           
-        }
+        text-align: center;
+        padding-top: 30px;
+        margin: auto;
+        padding-bottom: 20px;
         
+        width: 70%;
+    }
+    p
+    {
+        text-align:center;
+        margin: auto;
+        padding-top: 10px;
+       padding-top: 0px;
+        width: 75%;
+    }
+    .button
+    {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        @include center;
     }
 }

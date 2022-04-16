@@ -1,0 +1,15 @@
+button
+{
+
+    margin: auto;
+    @include center;
+    font-size: 17px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom right,#ff79da,#9356dc);
+    cursor: pointer;
+    
+   
+}

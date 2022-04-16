@@ -1,21 +1,52 @@
-header
+.v1
 {
     @include center;
     flex-direction: column;
     img
     {
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 50%;
         
     }
     .location
     {
+        max-width:100%;
+        margin: auto;
+        font-family: 'Roboto';
+        font-size: 16px;
         @include center;
-        background-color: lightgray;
+        background-color: lighten($color: lightgrey, $amount: 6%) ;
         border-top: 2px solid grey;
-        width: 100%;
+        width:100%;
         i
         {
-            padding-right: 10px
+            padding-right: 10px;
+            @include center;
+            padding-bottom: 10px;
         }
+    }
+}
+.v2
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+ 
+    img
+    {
+        
+        margin: auto;
+       width: 50%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+        @include center;
+    }
+    i
+    {
+        @include center;
+        padding-left: 20px;
+        
     }
 }

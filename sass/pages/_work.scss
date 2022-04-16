@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+
+
+.backgroundimg
+{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -45px;
+    
+}
+.alphapage
+{
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    position:relative;
+    background-color: whitesmoke;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    .topsection
+    {
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        i
+        {
+            padding-top: 25px;
+            
+        }
+    }
+    .entrées
+    {
+       
+        @include blocs;
+        
+    }
+    .plats
+    {
+        margin: auto;
+        @include blocs;
+}
+    .desserts
+    {
+        margin-bottom: 30px;
+        @include blocs;
+    }
+
+}
+
+
+
+
