@@ -1,115 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="./public/css/style.css" />
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
     </style>
     <title>à la française</title>
 </head>
-<body>
-<header class="v2">
-    <i class="fa-solid fa-left-long"></i>
-    <img src="./public/images/logo/ohmyfood.png" alt="logo">
 
-</header>
-    <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant_à_la_française" class="backgroundimg">
+<body>
+    <header class="v2">
+        <i class="fa-solid fa-left-long"></i>
+        <img src="./public/images/logo/ohmyfood.png" alt="logo">
+
+    </header>
+    <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant_à_la_française"
+        class="backgroundimg">
     <section class="alphapage">
         <div class="topsection">
             <h1>A la française</h1>
             <i class="fa-regular fa-heart"></i>
         </div>
         <div class="entrées">
-          <h1 class="title">Entrées</h1>
-          <div class="entrées__blocs">
-              <h2>Tartare de poulpe acidulé</h2>
-              <div class="entrées__blocs--description">
-                  <h3> Aux zests d'orange</h3>
-                  <p>25€</p>
-              </div>
-          </div>
-          <div class="entrées__blocs">
-            <h2>Velotué de légumes d'antan</h2>
-            <div class="entrées__blocs--description">
-                <h3> Carotte,panais,topinambour</h3>
-                <p>35€</p>
+            <h1 class="title">Entrées</h1>
+            <div class="entrées__blocs" id="bloc1">
+                <div class="entrées__blocs--description">
+                    <div class="description1">
+                    <h2>Tartare de poulpe acidulé</h2>
+                    <h3> Aux zests d'orange</h3>
+                </div>
+                   <div class="description2">
+                    <p>25€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    </div>
+                
+                </div>
             </div>
-        </div>
-        <div class="entrées__blocs">
-            <h2>Soupe à l'oignon</h2>
-            <div class="entrées__blocs--description">
-                <h3> Revisité</h3>
-                <p>20€</p>
+            <div class="entrées__blocs" id="bloc2">
+                <div class="entrées__blocs--description">
+                    <div class="description1">
+                    <h2>Velotué de légumes d'antan</h2>
+                    <h3> Carotte,panais,topinambour</h3>
+                </div>
+                <div class="description2">
+                    <p>35€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
+            <div class="entrées__blocs" id="bloc2">
+                <div class="entrées__blocs--description">
+                    <div class="description1">
+                    <h2>Soupe à l'oignon</h2>
+                    <h3>Revisité</h3>
+                </div>
+                <div class="description2">
+                    <p>20€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <div class="plats">
             <h1 class="title">PLATS</h1>
-            <div class="plats__blocs">
-                <h2>Coquilles Saint-Jaques</h2>
+            <div class="plats__blocs" id="bloc4">
+                
                 <div class="plats__blocs--description">
+                    <div class="description1">
+                    <h2>Coquilles Saint-Jaques</h2>
                     <h3> Accompagnées d'une purée de panais</h3>
+                </div>
+                <div class="description2">
                     <p>40€</p>
-                </div>
-            </div>
-            <div class="plats__blocs">
-                <h2>Magret de Canard</h2>
-                <div class="plats__blocs--description">
-                    <h3> Et parmentier de pommes de terres</h3>
-                    <p>35€</p>
-                </div>
-            </div>
-            <div class="plats__blocs">
-                <h2>Pigeonneau d'îlle-et-Vilaine</h2>
-                <div class="plats__blocs--description">
-                    <h3> Sur son lit de gnocchis aux légumes</h3>
-                    <p>44€</p>
-                </div>
-            </div>
-            
-          </div>
-          <div class="desserts">
-            <h1 class="title">DESSERTS</h1>
-            <div class="desserts__blocs">
-                <h2>Pétales de violettes glacés</h2>
-                <div class="desserts__blocs--description">
-                    <h3> Et purée de noisette</h3>
-                    <p>18€</p>
-                </div>
-            </div>
-            <div class="desserts__blocs">
-                <h2>Fondant au chocolat </h2>
-                <div class="desserts__blocs--description">
-                    <h3>Revisité</h3>
-                    <p>25€</p>
-                </div>
-            </div>
-            <div class="desserts__blocs">
-                <h2>Millefeuille croustillant</h2>
-                <div class="desserts__blocs--description">
-                    <h3> Myrtilles et pâte d'amande</h3>
-                    <p>23€</p>
-                </div>
-            </div>
-            
-          </div>
-          <div class="button">
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
 
-          </div>
-          <button type="button">Commander</button>
-    </section>
-    
-    <footer>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="plats__blocs" id="bloc4">
+                
+                <div class="plats__blocs--description">
+                    <div class="description1">
+                    <h2>Magret de Canard</h2>
+                    <h3>Et parmentier de pommes de terres</h3>
+                </div>
+                <div class="description2">
+                    <p>35€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="plats__blocs" id="bloc4">
+                
+                <div class="plats__blocs--description">
+                    <div class="description1">
+                    <h2>Pigeonneau d'îlle-et-vilaine</h2>
+                    <h3>Sur son lit de gnochhis aux légumes</h3>
+                </div>
+                <div class="description2">
+                    <p>44€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="desserts">
+            <h1 class="title">DESSERTS</h1>
+            <div class="desserts__blocs" id="bloc7">
+                
+                <div class="desserts__blocs--description">
+                    <div class="description1">
+                    <h2>Pétales de violettes glacés</h2>
+                    <h3> Et purée de noisette</h3>
+                </div>
+                <div class="description2">
+                    <p>18€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="desserts__blocs" id="bloc7">
+                
+                <div class="desserts__blocs--description">
+                    <div class="description1">
+                    <h2>Fondant au chocolat</h2>
+                    <h3>Revisité</h3>
+                </div>
+                <div class="description2">
+                    <p>25€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="desserts__blocs" id="bloc7">
+                
+                <div class="desserts__blocs--description">
+                    <div class="description1">
+                    <h2>Millefeuille croustillant</h2>
+                    <h3>Myrtilles et pâte d'amande</h3>
+                </div>
+                <div class="description2">
+                    <p>23€</p>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
         
+        <button type="button">Commander</button>
+    </section>
+
+    <footer>
+
         <ul>
             <li class="title"> ohmyfood </li>
             <li> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>

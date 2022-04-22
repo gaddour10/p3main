@@ -1,4 +1,64 @@
 @charset "UTF-8";
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(-50px);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#bloc1 {
+  animation-delay: 0.1s;
+}
+
+#bloc2 {
+  animation-delay: 0.2s;
+}
+
+#bloc3 {
+  animation-delay: 0.3s;
+}
+
+#bloc4 {
+  animation-delay: 0.4s;
+}
+
+#bloc5 {
+  animation-delay: 0.5s;
+}
+
+#bloc6 {
+  animation-delay: 0.6s;
+}
+
+#bloc7 {
+  animation-delay: 0.7s;
+}
+
+#bloc8 {
+  animation-delay: 0.8s;
+}
+
+#bloc9 {
+  animation-delay: 0.9s;
+}
+
 .topsectionv0 {
   max-width: 100%;
   font-family: "roboto";
@@ -55,7 +115,7 @@
   align-items: center;
   justify-content: flex-start;
   font-size: 13px;
-  width: 40%;
+  width: 20%;
   background-color: whitesmoke;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 0px #c2c2c2;
@@ -138,8 +198,13 @@
   margin: auto;
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 700px;
   margin-bottom: -45px;
+}
+@media (max-width: 800px) {
+  .backgroundimg {
+    height: 100%;
+  }
 }
 
 .alphapage {
@@ -162,13 +227,15 @@
   padding-right: 20px;
 }
 .alphapage .topsection i {
+  font-size: 35px;
   padding-top: 25px;
+  cursor: pointer;
 }
 .alphapage .entrées {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 380px;
+  height: 450px;
 }
 .alphapage .entrées h2 {
   margin: auto;
@@ -176,14 +243,25 @@
   padding-left: 15px;
 }
 .alphapage .entrées .title {
+  padding-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: #99E2D0 2px solid;
-  width: 10%;
-  stroke: 1;
-  margin-left: 20px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .entrées .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
 }
 .alphapage .entrées__blocs {
+  cursor: pointer;
+  animation: opacity 1s both;
   font-size: 12px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px gainsboro;
@@ -195,18 +273,68 @@
 .alphapage .entrées__blocs--description {
   margin: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.alphapage .entrées__blocs--description:hover .description2 p {
+  display: flex;
   padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .entrées__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
 }
 .alphapage .entrées__blocs--description h3 {
   padding-left: 12px;
+  white-space: nowrap;
+}
+.alphapage .entrées__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .entrées__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .entrées__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .entrées__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .entrées__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
 }
 .alphapage .plats {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 380px;
+  height: 450px;
 }
 .alphapage .plats h2 {
   margin: auto;
@@ -214,14 +342,25 @@
   padding-left: 15px;
 }
 .alphapage .plats .title {
+  padding-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: #99E2D0 2px solid;
-  width: 10%;
-  stroke: 1;
-  margin-left: 20px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .plats .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
 }
 .alphapage .plats__blocs {
+  cursor: pointer;
+  animation: opacity 1s both;
   font-size: 12px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px gainsboro;
@@ -233,18 +372,68 @@
 .alphapage .plats__blocs--description {
   margin: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.alphapage .plats__blocs--description:hover .description2 p {
+  display: flex;
   padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .plats__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
 }
 .alphapage .plats__blocs--description h3 {
   padding-left: 12px;
+  white-space: nowrap;
+}
+.alphapage .plats__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .plats__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .plats__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .plats__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .plats__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
 }
 .alphapage .desserts {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 380px;
+  height: 450px;
 }
 .alphapage .desserts h2 {
   margin: auto;
@@ -252,14 +441,25 @@
   padding-left: 15px;
 }
 .alphapage .desserts .title {
+  padding-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: #99E2D0 2px solid;
-  width: 10%;
-  stroke: 1;
-  margin-left: 20px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .desserts .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
 }
 .alphapage .desserts__blocs {
+  cursor: pointer;
+  animation: opacity 1s both;
   font-size: 12px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px gainsboro;
@@ -271,18 +471,64 @@
 .alphapage .desserts__blocs--description {
   margin: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.alphapage .desserts__blocs--description:hover .description2 p {
+  display: flex;
   padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .desserts__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
 }
 .alphapage .desserts__blocs--description h3 {
   padding-left: 12px;
+  white-space: nowrap;
 }
-
-footer {
+.alphapage .desserts__blocs--description .description2 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .desserts__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .desserts__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .desserts__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .desserts__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
+
+footer {
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -292,7 +538,22 @@ footer {
 footer .title {
   font-family: "Shrikhand";
 }
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1000px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 footer li {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "roboto";
   list-style-type: none;
 }
 @media (max-width: 600px) {
@@ -311,7 +572,11 @@ footer li {
 .v1 img {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 50%;
+}
+@media (max-width: 800px) {
+  .v1 img {
+    font-size: 20%;
+  }
 }
 .v1 .location {
   max-width: 100%;
@@ -340,7 +605,7 @@ footer li {
 }
 .v2 img {
   margin: auto;
-  width: 50%;
+  font-size: 50%;
   padding-bottom: 10px;
   padding-top: 10px;
   display: flex;
@@ -352,6 +617,7 @@ footer li {
   justify-content: center;
   align-items: center;
   padding-left: 20px;
+  font-size: 30px;
 }
 
 .restaurants {
@@ -417,6 +683,7 @@ footer li {
   margin-bottom: 15px;
 }
 .restaurants__blocs .details__description i {
+  width: 100px;
   margin-right: 15px;
 }
 @media (max-width: 1100px) {

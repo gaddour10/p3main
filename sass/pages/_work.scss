@@ -12,8 +12,12 @@
     margin: auto;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 700px;
     margin-bottom: -45px;
+    @media (max-width:800px) {
+        height:100%;
+        
+    }
     
 }
 .alphapage
@@ -38,13 +42,14 @@
 
         i
         {
+            font-size: 35px;
             padding-top: 25px;
+            cursor: pointer;
             
         }
     }
     .entrées
     {
-       
         @include blocs;
         
     }

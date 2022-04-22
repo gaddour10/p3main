@@ -1,7 +1,5 @@
 footer
-{
-    @include center;
-    text-align: center;
+{  
     margin: auto;
     .title
     {
@@ -11,8 +9,24 @@ footer
     padding-bottom: 30px;
     background-color: black;
     color: white;
+    ul
+    {
+
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:1000px)
+        {
+            @include center;
+            flex-direction: column;
+        }
+
+    }
     li
     {
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'roboto';
+        
         list-style-type: none;
     }
     @media (max-width:600px) {

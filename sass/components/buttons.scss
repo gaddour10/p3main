@@ -1,6 +1,5 @@
 button
 {
-
     margin: auto;
     @include center;
     font-size: 17px;
@@ -10,6 +9,8 @@ button
     color: white;
     background: linear-gradient(to bottom right,#ff79da,#9356dc);
     cursor: pointer;
+    
+   
     
    
 }

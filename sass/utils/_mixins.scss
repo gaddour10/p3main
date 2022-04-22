@@ -15,7 +15,6 @@
     margin: auto;
     padding-left: 5px;
 }
-
 @mixin right_position {
     position: relative;
             left: 295px;
@@ -24,9 +23,10 @@
 }
 @mixin blocs {
     display: flex;
+    
     flex-direction: column;
     justify-content: space-around;
-    height: 380px;
+    height: 450px;
     h2
     
         {
@@ -36,29 +36,112 @@
         }
         .title
         {
+            padding-bottom: 10px;
             display: flex;
-            justify-content: flex-start;
+            text-align: center;
+            @include center;
+            
             border-bottom: #99E2D0 2px solid;
-            width: 10%;
-            stroke: alpha($color: #000000);
-            margin-left: 20px;
+            width: 100%;
+            @media (max-width:800px)
+            {
+                margin-left: 20px;
+
+                justify-content: flex-start;
+                width: 10%;
+                
+            }
         }
         &__blocs
         {
             
-          
-            font-size: 12px;
+            cursor:pointer;
+            animation : opacity 1s both;
+            font-size : 12px;
             @include border-shadowv2;
+            
             &--description
             {
+                
                 margin: auto;
                 display: flex;
-                justify-content:space-between;
-                padding-right: 20px;
+                align-items: center;
+                justify-content: space-between;
+                &:hover .description2
+                {  
+                    p
+                    {
+                        display: flex;
+                        padding-right: 20px;
+                   transform-origin: right;
+                   transition: 700ms;
+                   
+                    }
+                    .validation
+                    {
+                    display: flex;
+                   animation: slide-left 400ms linear ;
+                   transform-origin: right;
+                   
+                    }
+                   
+                }
                 h3
                 {
                     padding-left: 12px;
+                    white-space: nowrap;
                 }
+                .description2
+                {
+                    position: relative;
+                    @include center;
+                    padding-left: 7px;
+                    display: flex;
+                    p
+                    {
+                        position:relative;
+                        font-weight: bold;
+                        padding-right: 10px;
+                    }
+                }
+                .description1
+                {
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                        white-space: nowrap;
+                        overflow:hidden;
+
+                }
+                .validation
+                {
+                    display: none;
+                    position: relative;
+                    font-size: 35px;
+                    color:white;
+                    background-color: $color-tertiaire;
+                    border-radius: 0 20px 20px 0;
+                    padding: 0 13px;
+                    height: 82px;
+                    
+                    
+                    
+                        
+                    i
+                    {
+                        
+                        
+                        @include center;
+                        align-content: center;
+                        height: 100%;
+                        transform: rotate(180deg);
+                        animation: rotate 0.5s both;
+
+                    
+                    }
+                    
+                }
+                
+            
             }
         }
 }

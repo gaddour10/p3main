@@ -6,7 +6,10 @@
     {
         padding-top: 10px;
         padding-bottom: 10px;
-        width: 50%;
+       @media (max-width:800px) 
+       {
+           font-size: 20%;
+       }
         
     }
     .location
@@ -37,7 +40,7 @@
     {
         
         margin: auto;
-       width: 50%;
+       font-size: 50%;
         padding-bottom: 10px;
         padding-top: 10px;
         
@@ -47,6 +50,8 @@
     {
         @include center;
         padding-left: 20px;
+        font-size: 30px;
+        
         
     }
 }
