@@ -605,7 +605,7 @@ footer li {
 }
 .v2 img {
   margin: auto;
-  font-size: 50%;
+  width: 30%;
   padding-bottom: 10px;
   padding-top: 10px;
   display: flex;
